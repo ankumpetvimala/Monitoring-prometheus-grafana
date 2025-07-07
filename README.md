@@ -1,4 +1,4 @@
-# 🚀 Container Monitoring with Prometheus & Grafana
+# Container Monitoring with Prometheus & Grafana
 
 This project sets up a container monitoring stack using **Prometheus**, **Grafana**, **Node Exporter**, and **cAdvisor** with **Docker Compose**.
 
