@@ -16,7 +16,6 @@ This project sets up a container monitoring stack using **Prometheus**, **Grafan
 ## 📆 How to Run
 
 docker compose up -d
-```
 
 Access the services:
 
