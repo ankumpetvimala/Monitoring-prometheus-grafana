@@ -1,42 +1,62 @@
-# Docker Compose for Prometheus & Grafana
+# 🚀 Container Monitoring with Prometheus & Grafana
 
-This project makes it easier to get started with [Prometheus](https://github.com/prometheus/prometheus) and [Grafana](https://github.com/grafana/grafana). Docker Compose creates the necessary containers, including [node exporter](https://github.com/prometheus/node_exporter) and [cadvisor](https://github.com/google/cadvisor) used to monitor the setup.
+This project sets up a container monitoring stack using **Prometheus**, **Grafana**, **Node Exporter**, and **cAdvisor** with **Docker Compose**.
 
-In addition, this project provides an example of how to seed Grafana with some dashboards and the Prometheus Data Source.
+---
 
-And for a bonus, when you run it locally you can monitor any other running containers.
+## 📁 Stack Overview
 
-## Getting Started
+* **Prometheus**: Metrics collection
+* **Grafana**: Dashboard visualization
+* **Node Exporter**: Host metrics
+* **cAdvisor**: Container metrics
 
-The Makefile provides some easy wrapper commands.
+---
 
-To start up the containers, copy the sample config, and seed the grafana database,
+## 📆 How to Run
 
-    make start
+docker compose up -d
+```
 
-To view the logs for all containers,
+Access the services:
 
-    make logs
+* **Prometheus** → [http://localhost:9090](http://localhost:9090)
+* **Grafana** → [http://localhost:3000](http://localhost:3000)
 
-To copy the sample config,
+  * **Username:** `admin` | **Password:** `admin`
 
-    make etc/prometheus/prometheus.yml
+---
 
-To seed the Grafana Database, (it is ok to run this multiple times as it will not overwrite anything)
+## 📊 Dashboards
 
-    make seed
+Imported Grafana dashboards:
 
-To remove the containers and volumes,
+* **Node Exporter Full** (Dashboard ID: `1860`)
+* **Docker Container Overview** (Dashboard ID: `193` or `14282`)
 
-    make destroy
+### Grafana Dashboard
 
-## Grafana Dashboard
+![Grafana Dashboard](screenshots/grafana-dashboard.png)
 
-http://localhost:3000
+### Prometheus Query ("up")
 
-    Username: admin
-    Password: admin
+![Prometheus up](screenshots/prometheus-up-query.png)
 
-## Prometheus Dashboard
+### Prometheus Targets
 
-http://localhost:9090
+![Prometheus Targets](screenshots/prometheus-targets.png)
+
+---
+
+## ✅ Status
+
+| Component     | Status    |
+| ------------- | --------- |
+| Prometheus    | ✅ Running |
+| Grafana       | ✅ Running |
+| Node Exporter | ✅ UP      |
+| cAdvisor      | ✅ UP      |
+
+---
+
+
