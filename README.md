@@ -35,15 +35,22 @@ Imported Grafana dashboards:
 
 ### Grafana Dashboard
 
-![Grafana Dashboard](screenshots/grafana-dashboard.png)
+![Grafana Dashboard]
+
+![grafana dashboard](https://github.com/user-attachments/assets/38d2c99a-3540-4349-8326-a6445ad6717d)
 
 ### Prometheus Query ("up")
 
-![Prometheus up](screenshots/prometheus-up-query.png)
+![Prometheus up]
+
+![prometheus up](https://github.com/user-attachments/assets/50464e5d-5272-4ec9-9fe6-b1983fd585f6)
+
 
 ### Prometheus Targets
 
-![Prometheus Targets](screenshots/prometheus-targets.png)
+![Prometheus Targets]
+
+![Prometheus targets](https://github.com/user-attachments/assets/01527275-4f57-44df-97b7-cb717296a984)
 
 ---
 
